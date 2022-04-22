@@ -2,6 +2,10 @@
 using namespace std;
 
 int main(){
-    cout << 4/10 << endl;
-    cout << 4%10 << endl;
+    string tmp = "testtest";
+    char a[]="penis";
+    strcpy(a, tmp.c_str() );
+    cout << a[3] << endl;
+    printf("%s\n", a);
+    printf("%d\n", strlen(a));
 }
