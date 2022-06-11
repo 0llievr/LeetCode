@@ -1,11 +1,18 @@
 #include <iostream>
 using namespace std;
 
+
+void myfunct(int a){
+    cout << a << endl;
+    
+    if(a < 3){
+        myfunct(a+1);
+    }
+
+    cout << a << endl;
+
+}
+
 int main(){
-    string tmp = "testtest";
-    char a[]="penis";
-    strcpy(a, tmp.c_str() );
-    cout << a[3] << endl;
-    printf("%s\n", a);
-    printf("%d\n", strlen(a));
+    myfunct(0);
 }
