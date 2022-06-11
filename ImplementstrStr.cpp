@@ -12,7 +12,6 @@ public:
         
         //move left -> right in haystack
         for(int i = 0; i < haystack.length(); i++){
-            printf("i:%d,%c , indx:%d,%c\n", i, haystack[i], indx, needle[indx]);
             
             //if needle car match move needle pointer forward
             if(haystack[i] == needle[indx]){
