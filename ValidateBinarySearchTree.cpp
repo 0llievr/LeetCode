@@ -16,8 +16,7 @@
 class Solution {
 private: 
     vector<int> rtn;
-public:
-    
+public: 
     void traverse(TreeNode* node){
         if(node->left != nullptr)
             traverse(node->left);
@@ -31,9 +30,12 @@ public:
  
     
     bool isValidBST(TreeNode* root) {
+
+        //In odder traverse the binary tree, saving nodes to rtn vector
         if(root != nullptr)
             traverse(root);
         
+        //increment though vector if rtn[i] <= rtn [i-1] tree is not valid
         for(int i = 1; i < rtn.size(); i++){
             if(rtn[i] <= rtn[i-1])
                 return false;
