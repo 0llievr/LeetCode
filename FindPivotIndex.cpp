@@ -26,7 +26,6 @@ public:
     }
 };
 
-
 /*
     int pivotIndex(vector<int>& nums) {
         int leftTotal = 0;

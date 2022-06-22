@@ -9,8 +9,7 @@ public:
         if(x==0){return 0;}
         if(x==1){return 1;}
         
-        //Work outside in
-        
+        //Work outside in 
         while(l<=r){
             
             mid = (l+r)/2;

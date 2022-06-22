@@ -26,9 +26,7 @@ public:
         if(node->right != nullptr)
             traverse(node->right);
     }
-        
- 
-    
+         
     bool isValidBST(TreeNode* root) {
 
         //In odder traverse the binary tree, saving nodes to rtn vector
